@@ -1,0 +1,20 @@
+ <!doctype html>
+<html ng-app="mainApp">
+<head>
+    <title>Web Shopping Cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-controller="counterController">
+    <div ng-repeat="row in CounterRows">
+        <div>{{$index +1}}. {{row.name}}</div>
+    </div>
+    <label>Name</label>
+    <input type="text" ng-model="ind">
+    <button ng-click="add()">Add</button>
+    <label>Number</label>
+    <input type="text" ng-model="ind2">
+    <input type="button" value="Remove" ng-click="remove()"/>
+    <p><em style="color:red">If you don't enter a number, the last item will be removed.</em></p>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/mainController.js"></script>
+</body>
+</html>
